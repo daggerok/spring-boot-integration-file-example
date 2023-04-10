@@ -58,14 +58,14 @@ class AppProperties {
     final int bufferSize;
 
     @ConstructorBinding
-    public AppProperties(@DefaultValue("target/input-dir") String inputDir,
-                         @DefaultValue("target/output-dir") String outputDir,
-                         @DefaultValue("*.txt") String filenamePattern,
-                         @DefaultValue("1234ms") Duration syncInterval,
-                         @DefaultValue("true") boolean deleteSource,
-                         @DefaultValue("true") boolean createDir,
-                         @DefaultValue("true") boolean recursive,
-                         @DefaultValue("1024") int bufferSize) {
+    AppProperties(@DefaultValue("target/input-dir") String inputDir,
+                  @DefaultValue("target/output-dir") String outputDir,
+                  @DefaultValue("*.txt") String filenamePattern,
+                  @DefaultValue("1234ms") Duration syncInterval,
+                  @DefaultValue("true") boolean deleteSource,
+                  @DefaultValue("true") boolean createDir,
+                  @DefaultValue("true") boolean recursive,
+                  @DefaultValue("1024") int bufferSize) {
 
         this.inputDir = inputDir;
         this.outputDir = outputDir;
